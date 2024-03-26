@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+$font-family-sans-serif: "Be Vietnam Pro", sans-serif;
+$font-size-base: 1rem;
+$primary: hsl(12, 88%, 59%);
+$dark: hsl(228, 39%, 23%);
+$headings-color: $dark;
+$body-color: hsl(0, 0%, 98%);
+$navbar-nav-link-padding-x: 20px;
+$input-btn-padding-x: 20px;
+$input-btn-padding-y: 10px;
+// $btn-border-radius:15px;
+$input-border-radius:25px;
+$input-font-size:1rem;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 9,
+
+);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+ body{
+  min-height: 100vh;
+ }
+.bg-img {
+  background-image: url(../images/Rectangle2.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: auto;
+}
+.info {
+  background-image: url(../images/rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+}
+
+.btn-custom {
+  box-shadow: 0px 5px 10px $primary;
+}
+.btn-custom-outline{
+  background-color: white;
+  
+}
+.btn-custom-outline:hover{
+  color:  hsl(13, 100%, 96%);
+}
+.human-img {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  transform: translateX(200%) translateY(-50%);
+  margin-bottom: -10px;
+}
+.card-height{
+  height: 250px;
+}
+.contact{
+  background-image: url(../images/bg-simplify-section-desktop.svg);
+  background-color: $primary;
+}
+footer{
+  background-color:  hsl(233, 12%, 13%);
+}
+.input-bg{
+  background-color: white;
+  
+}
+@include media-breakpoint-down(sm) { 
+  .human-img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    transform: translateX(270%) translateY(-50%);
+    margin-bottom: -10px;
+  }
+ }
+ @include media-breakpoint-up(xxl) { 
+  .human-img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    transform: translateX(340%) translateY(-50%);
+    margin-bottom: -10px;
+  }
+ }
+ @include media-breakpoint-only(md) { 
+  .human-img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    transform: translateX(250%) translateY(-50%);
+    margin-bottom: -10px;
+  }
+ }
+ @include media-breakpoint-only(lg) { 
+  .human-img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    transform: translateX(165%) translateY(-50%);
+    margin-bottom: -10px;
+  }
+ }
